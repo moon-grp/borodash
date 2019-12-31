@@ -13,21 +13,21 @@
               </v-avatar>
             </v-row>
 
-            <div class="text-center mt-4">Hello, jordan</div>
+            <div class="text-center mt-4 font_1">Hello, Toby</div>
           </template>
 
-          <v-list shaped dense>
-            <v-list-item-group v-model="item" color="primary">
-              <v-list-item>
+          <v-list class="mt-10" shaped dense>
+            <v-list-item-group v-model="item" color="#A70026">
+              <v-list-item class="font_1">
                 Dashboard
               </v-list-item>
-              <v-list-item>
+              <v-list-item class="font_1">
                 Users
               </v-list-item>
-              <v-list-item>
+              <v-list-item class="font_1">
                 Communications
               </v-list-item>
-              <v-list-item>
+              <v-list-item class="font_1">
                 Settings
               </v-list-item>
             </v-list-item-group>
@@ -46,24 +46,25 @@
       </v-col>
       <v-col cols="9">
         <v-container>
-          <v-row>
+          <v-row class="mt-n3">
             <v-text-field
+              disabled
               label="search"
               prepend-icon="mdi-magnify"
               style="max-width: 200px;"
             ></v-text-field>
             <v-spacer />
-            <v-btn icon>
+            <v-btn class="mx-3" icon>
               <v-icon dark>mdi-bell</v-icon>
             </v-btn>
-            <v-btn icon>
-              <v-icon>mdi-heart</v-icon>
+            <v-btn class="mr-7" icon>
+              <v-icon>mdi-menu</v-icon>
             </v-btn>
           </v-row>
           <v-row>
             <v-col class="col-4 mt-12 mx-auto">
-              <div><p>Transcations</p></div>
-              <div class="row mt-3">
+              <div><p class="font_2">Transcations</p></div>
+              <div class="row font_3  mt-3">
                 <v-btn text small>Today</v-btn>
                 <v-btn text small>week</v-btn>
                 <v-btn text small>Month</v-btn>
@@ -72,26 +73,26 @@
               <div class="row mt-3">
                 <v-card width="300" outlined>
                   <v-card-text>
-                    <p class="text--primary">
+                    <p class="font_4 ">
                       Volume
                     </p>
                   </v-card-text>
                   <v-card-text>
-                    <p class="display-1 text--primary">
+                    <p class="font_5">
                       1230
                     </p>
                   </v-card-text>
                   <v-card-text>
-                    <p class="text--primary">
-                      Ideal transcation no:5000
+                    <p class="font_6">
+                      Ideal transcation no: 5000
                     </p>
                   </v-card-text>
                 </v-card>
               </div>
             </v-col>
             <v-col class="col-4 mt-12 mx-auto">
-              <p>Donations</p>
-              <div class="row">
+              <p class="font_2">Donations</p>
+              <div class="row font_3 mt-3">
                 <v-btn text small>Today</v-btn>
                 <v-btn text small>week</v-btn>
                 <v-btn text small>Month</v-btn>
@@ -100,17 +101,17 @@
               <div class="row mt-3">
                 <v-card width="300" outlined>
                   <v-card-text>
-                    <p class="text--primary">
+                    <p class="font_4">
                       Today
                     </p>
                   </v-card-text>
                   <v-card-text>
-                    <p class="display-1 text--primary">
+                    <p class="font_5">
                       200
                     </p>
                   </v-card-text>
                   <v-card-text>
-                    <p class="text--primary">
+                    <p class="font_6">
                       21 in the past hour
                     </p>
                   </v-card-text>
@@ -124,54 +125,51 @@
                 <v-btn text small>Month</v-btn>
                 <v-btn text small>All Time</v-btn>
               </div>
-              <div class="row">
-                <v-card width="300" outlined>
+              <div class="row mt-3">
+                <v-card width="300" color="#A70026" outlined>
                   <v-card-text>
-                    <p class="text--primary">
-                      wallet
+                    <p class="font_7">
+                      Wallet
                     </p>
                   </v-card-text>
                   <v-card-text>
-                    <p class="display-1 text--primary">
+                    <p class="font_8">
                       NGN 500,000
                     </p>
                   </v-card-text>
                 </v-card>
               </div>
               <div class="row mt-5">
-                <v-card width="300" outlined>
+                <v-card width="300" color="#A70026" outlined>
                   <v-card-text>
-                    <p class="text--primary">
+                    <p class="font_7">
                       Users
                     </p>
                   </v-card-text>
-
-                  <v-list-item two-line>
-                    <v-list-item-content>
-                      <p class="text--primary">
-                        800
-                      </p>
+                  <v-card-text class="ml-n4">
+                    <v-list-item>
+                      <v-list-item-content>
+                        <span class="font_8">
+                          800
+                        </span>
+                      </v-list-item-content>
                       <v-list-item-action>
-                        <v-btn icon>
-                          <v-icon color="grey lighten-1"
-                            >mdi-information</v-icon
-                          >
-                        </v-btn>
+                        <v-btn small tile class="button_font">Add User</v-btn>
                       </v-list-item-action>
-                    </v-list-item-content>
-                  </v-list-item>
+                    </v-list-item>
+                  </v-card-text>
                 </v-card>
               </div>
             </v-col>
           </v-row>
           <div class="row mt-5 mx-auto">
             <div class="col-4">
-              <div>Recent Transcations</div>
+              <div class="font_9">Recent Transcations</div>
               <v-list-item class="ml-n4" two-line>
                 <v-list-item-content>
                   <v-list-item-title>NGN 100,000</v-list-item-title>
-                  <v-list-item-subtitle>
-                    Credit
+                  <v-list-item-subtitle class="credit">
+                    <span class="credit"> Credit </span>
                     <span class="push">12-12-19 | 9:23am</span>
                   </v-list-item-subtitle>
                 </v-list-item-content>
@@ -180,7 +178,7 @@
                 <v-list-item-content>
                   <v-list-item-title>NGN 25,000</v-list-item-title>
                   <v-list-item-subtitle>
-                    Debit
+                    <span class="debit">Debit</span>
                     <span class="push">12-12-19 | 9:23am</span>
                   </v-list-item-subtitle>
                 </v-list-item-content>
@@ -189,7 +187,7 @@
                 <v-list-item-content>
                   <v-list-item-title>NGN 22,000</v-list-item-title>
                   <v-list-item-subtitle>
-                    Credit
+                    <span class="credit">Credit</span>
                     <span class="push">12-12-19 | 9:23am</span>
                   </v-list-item-subtitle>
                 </v-list-item-content>
@@ -198,14 +196,14 @@
                 <v-list-item-content>
                   <v-list-item-title>NGN 50,000</v-list-item-title>
                   <v-list-item-subtitle>
-                    Debit
+                    <span class="debit">Debit</span>
                     <span class="push">12-12-19 | 9:23am</span>
                   </v-list-item-subtitle>
                 </v-list-item-content>
               </v-list-item>
             </div>
             <div class="col-4 mx-auto">
-              <div><p>Recent Users</p></div>
+              <div><p class="font_9">Recent Users</p></div>
               <v-list-item class="ml-n3">
                 <v-list-item-avatar>
                   <v-img
@@ -273,8 +271,17 @@
               </v-list-item>
             </div>
             <div class="col-4 mx-auto">
-              <div><p>Wallet Activity</p></div>
-              <hr />
+              <v-list-item>
+                <v-list-item-content>
+                  <span class="font_9">
+                    Wallet Activity
+                  </span>
+                </v-list-item-content>
+                <v-list-item-action>
+                  <v-btn small outlined color="#7188A4" class="button_font">withdrawal</v-btn>
+                </v-list-item-action>
+              </v-list-item>
+              <hr class="mt-2" />
               <v-list-item class="ml-n3">
                 <v-list-item-avatar>
                   <v-img
@@ -287,11 +294,11 @@
                 </v-list-item-content>
                 <v-list-item-action>
                   <v-btn icon>
-                    <v-icon color="grey lighten-1">mdi-information</v-icon>
+                    <v-icon color="grey lighten-1">mdi-plus</v-icon>
                   </v-btn>
                 </v-list-item-action>
               </v-list-item>
-                 <v-list-item class="ml-n3">
+              <v-list-item class="ml-n3">
                 <v-list-item-avatar>
                   <v-img
                     src="https://cdn.vuetifyjs.com/images/lists/4.jpg"
@@ -303,11 +310,11 @@
                 </v-list-item-content>
                 <v-list-item-action>
                   <v-btn icon>
-                    <v-icon color="grey lighten-1">mdi-information</v-icon>
+                    <v-icon color="grey lighten-1">mdi-plus</v-icon>
                   </v-btn>
                 </v-list-item-action>
               </v-list-item>
-                 <v-list-item class="ml-n3">
+              <v-list-item class="ml-n3">
                 <v-list-item-avatar>
                   <v-img
                     src="https://cdn.vuetifyjs.com/images/lists/4.jpg"
@@ -319,11 +326,11 @@
                 </v-list-item-content>
                 <v-list-item-action>
                   <v-btn icon>
-                    <v-icon color="grey lighten-1">mdi-information</v-icon>
+                    <v-icon color="grey lighten-1">mdi-plus</v-icon>
                   </v-btn>
                 </v-list-item-action>
               </v-list-item>
-                 <v-list-item class="ml-n3">
+              <v-list-item class="ml-n3">
                 <v-list-item-avatar>
                   <v-img
                     src="https://cdn.vuetifyjs.com/images/lists/4.jpg"
@@ -335,11 +342,11 @@
                 </v-list-item-content>
                 <v-list-item-action>
                   <v-btn icon>
-                    <v-icon color="grey lighten-1">mdi-information</v-icon>
+                    <v-icon color="grey lighten-1">mdi-plus</v-icon>
                   </v-btn>
                 </v-list-item-action>
               </v-list-item>
-                 <v-list-item class="ml-n3">
+              <v-list-item class="ml-n3">
                 <v-list-item-avatar>
                   <v-img
                     src="https://cdn.vuetifyjs.com/images/lists/4.jpg"
@@ -351,7 +358,7 @@
                 </v-list-item-content>
                 <v-list-item-action>
                   <v-btn icon>
-                    <v-icon color="grey lighten-1">mdi-information</v-icon>
+                    <v-icon color="grey lighten-1">mdi-plus</v-icon>
                   </v-btn>
                 </v-list-item-action>
               </v-list-item>
@@ -381,5 +388,96 @@ export default {
 <style>
 .push {
   margin-left: 100px;
+}
+
+.font_1 {
+  font-family: Proxima Nova;
+  color: #a70026;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.font_2 {
+  font-family: Wes FY;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 21px;
+  color: #a70026;
+}
+
+.font_5 {
+  font-family: Wes FY;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 21px;
+  color: #a70026;
+}
+.credit {
+  color: #44b8c3;
+}
+.debit {
+  color: #a70026;
+}
+.font_9 {
+  font-family: Wes FY;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 21px;
+  color: #170d42;
+}
+.font_8 {
+  font-family: Wes FY;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.font_7 {
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.button_font {
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 21px;
+  color: #7188a4;
+}
+.font_6 {
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #7188a4;
+}
+
+.font_3 {
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 21px;
+  color: #a70026;
+}
+
+.font_4 {
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: #a70026;
 }
 </style>
